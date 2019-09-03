@@ -4,17 +4,58 @@
         <title>
             Profiel Pagina
         </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
+
+<!-- <style>
+    div img:hover{
+    cursor: zoom-in;
+    }
+
+    div img:active {
+        transition: all .2s ease-in-out;
+        transform: scale(2);
+        z-index: 2;
+    }
+
+    li {
+        z-index: 1;
+    }
+
+    .stats{
+    transform: translate(320px, -250px);
+    font-family: 'Press Start 2P', 'Ariel', 'Verdana', sans-serif;
+} -->
+
+    </style>
+
     <body>
-        <h1>
+        <h1 class="center" id="top">
             Profiel Pagina
         </h1>
 
-        <p>
-            <img src = "me.jpg" alt = "nope" height = "500" width = "750">
-        </p>
+        <ul style="list-style: none" class="nav-bar white-border">
+            <li>
+                <a href="/">Hoofdpagina</a>
+                <a href="profile.html" class="active">Profiel</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="dashboard.html#studiewijzer">Studiewijzer</a>
+            </li>
+        </ul>
 
-        <ul>
+        <div class="move-up">
+            <img src = "me.jpg" alt = "me" width="350px" class="white-border"> 
+            <ul style="list-style: circle" class="stats">
+                <li>Kaycee TjonKonFat</li>
+                <li></li>
+                <li>Age 19/???</li>
+            </ul>
+        </div>
+
+        
+        <ul style="list-style: circle" class="move-up">
+            <h3 class="left">Kenmerken:</h3>
             <li>Stil</li>
             <li>Verlegen</li>
             <li>Kalm</li>
@@ -22,5 +63,12 @@
             <li>Ravenclaw</li>
 
         </ul>
+
+        <p>
+            <a href="/" class="white-border">Back</a>
+            <a href="#top" class="white-border">
+                <img src = "up.png" alt = "^" width="30px"> 
+            </a>
+        </p>
     </body>
 </html>

@@ -1,0 +1,145 @@
+body{
+    background-color: #9c9c9c;
+    background-image: linear-gradient(to bottom right, #02246d, #0f033f);
+    color: #eee;
+    font-family: 'Ariel', 'Verdana', sans-serif;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+html{
+    background-color: black;
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table {
+    color: #111;
+    border: 1px solid black;
+    padding: 1px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .7);
+    transform: skewX(-.5deg);
+    background-color: rgb(245, 245, 245);
+}
+
+
+h1 {
+    text-shadow: 2px 2px 1px grey;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #6116a7, #42026d, #2c033f);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    font-family: 'Press Start 2P', 'Ariel', 'Verdana', sans-serif;
+}
+
+/* Classes */
+
+.center {
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+.white-border{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.move-up{
+    transform: translate(0px, -100px);
+}
+
+.move-left {
+    align-items: left;
+}
+
+.stats{
+    transform: translate(320px, -250px);
+    font-family: 'Press Start 2P', 'Ariel', 'Verdana', sans-serif;
+}
+
+
+/* Buttons */
+    p a:link{
+        background-color: #00133b;
+        background-image: linear-gradient(to bottom right, #1644a7, #02246d, #0f033f);
+        opacity: .8;
+        color: #eee;
+        padding: 10px;
+        border: 3px solid white;
+    }
+
+    p a:visited{
+        color: #eee;
+        opacity: 1;
+    }
+
+    p a:hover{
+        box-shadow: 1px 1px 5px rgb(130, 117, 187), -1px -1px 5px rgb(130, 117, 187);
+        opacity: 1;
+    }
+
+    p a:active {
+        background-color: #180466;
+        background-image: linear-gradient(to bottom right, #033091, #180466);
+        color: rgb(172, 172, 172);
+        border: 3px solid rgb(233, 232, 232);
+        opacity: 1;
+    } 
+
+/* Make the navigation bar */
+.nav-bar {
+    margin-left: 750px;
+    padding: 0;
+    width: 250px;
+    background-color: #00133b;
+    background-image: linear-gradient(to bottom right, #1644a7, #02246d, #0f033f);
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: #eee;
+    padding: 8px 16px;
+    text-decoration: none;
+    opacity: .5;
+}
+
+li a.active {
+    opacity: 1;
+    color: #eee;
+    background-color: #002063;
+    background-image: linear-gradient(to bottom right, #8e89aa, #534d70, #39354b);
+    cursor: pointer;
+}
+
+li a:hover:not(.active) {
+    opacity: 1;
+    color: #eee;
+    background-color: #002063;
+    background-image: linear-gradient(to bottom right, #224eac, #0c2d72, #180c44);
+}
+
+div img:hover{
+    cursor: zoom-in;
+}
+
+div img:active {
+    transition: all .2s ease-in-out;
+    transform: scale(2);
+}
