@@ -89,8 +89,12 @@ a {
         background-image: linear-gradient(to bottom right, #033091, #180466);
 }
 
-.move-up {
-    transform: translate(0px, -70px);
+.img-position {
+    transform: translate(72px, -70px);
+}
+
+.table-position {
+    transform: translate(20px, -100px);
 }
 
 .move-left {
@@ -102,6 +106,21 @@ a {
     font-family: 'FF7', 'Ariel', 'Verdana', sans-serif;
     font-size: 40px;
 } 
+
+.text-box {
+    margin: 35px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+.img-box {
+    margin: 10px 35px 10px 35px;
+}
 
 
 /* Buttons */
@@ -117,6 +136,7 @@ a {
     p a:visited{
         color: #eee;
         opacity: 1;
+        
     }
 
     p a:hover{
@@ -155,7 +175,7 @@ li a.active {
     color: #eee;
     background-color: #002063;
     background-image: linear-gradient(to bottom right, #8e89aa, #534d70, #39354b);
-    cursor: pointer;
+    cursor: default;
 }
 
 li a:hover:not(.active) {
@@ -166,8 +186,13 @@ li a:hover:not(.active) {
 }
 
 /* Zoom in */
-div img:hover {
-    cursor: auto;
+div img:hover:not(:active){
+    cursor: zoom-in;
+    box-shadow: 1px 1px 5px rgb(130, 117, 187), -1px -1px 5px rgb(130, 117, 187);
+}
+
+div img:active {
+    cursor: crosshair;
     transition: all .4s ease-in-out;
     transform: scale(2);
     z-index: 1;
@@ -196,12 +221,13 @@ div img:hover {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #002063}
+  .dropdown-content a:hover {
+      background-color: #002063
+    }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 15px;
