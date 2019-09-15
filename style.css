@@ -63,6 +63,17 @@ a {
     overflow: auto;
 }
 
+.motivatie-box {
+    margin: 35px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 480px;
+    padding: 10px;
+
+    word-wrap: break-word;
+    overflow: auto;
+}
+
 /*Buttons*/
 /* Create the buttons */
 .box {
@@ -78,6 +89,7 @@ a {
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
+    color: white;
 }
 
 /* Make the buttons work  */
