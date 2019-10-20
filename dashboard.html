@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html" class="bg-black">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,33 +21,43 @@
 
         <!-- Title -->
         <h1 class="title">Dashboard</h1>
+
+        <!-- Ligth switch test -->
+        <button id="lightSwitch" class="light-switch">Light</button>
         
         <!-- Navigation bar -->
         <ul style="list-style: none" class="nav-bar background">
-            <li>
-                <a href="/">Hoofdpagina</a>
-                <a href="profile.html">Profiel</a>
-                <div class="dropdown">
-                    <a href="motivation.html">Mijn motivatie V</a>
-                    <div class="dropdown-content background">
-                        <a href="motivation.html#theory">Theorie</a>
-                        <a href="motivation.html#prestatievotivatie">Prestatie-motivatie</a>
-                        <a href="motivation.html#carrièreankers">Carrière-ankers</a>
-                        <a href="motivation.html#sources">Bronnenlijst</a>
+                <li>
+                    <a href="/">Hoofdpagina</a>
+                    <a href="profile.html">Profiel</a>
+                    <div class="dropdown">
+                        <a href="motivation.html">Mijn motivatie V</a>
+                        <div class="dropdown-content background">
+                            <a href="motivation.html#theory">Theorie</a>
+                            <a href="motivation.html#prestatievotivatie">Prestatie-motivatie</a>
+                            <a href="motivation.html#carrièreankers">Carrière-ankers</a>
+                            <a href="motivation.html#conclusie">Conclusie</a>
+                            <a href="motivation.html#sources">Bronnen lijst</a>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="active">Dashboard V</a>
-                    <div class="dropdown-content background">
-                        <a href="dashboard.html#studiewijzer">Studiewijzer</a>
+                    <div class="dropdown">
+                        <a href="beroepsbeeld.html">Beroepbeeld V</a>
+                        <div class="dropdown-content background">
+                            <a href="beroepsbeeld.html#hboi">HBO-I Student Event</a>
+                            <a href="beroepsbeeld.html#bedrijvensafarie">Bedrijven safari</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                    <div class="dropdown">
+                        <a href="#" class="active">Dashboard V</a>
+                        <div class="dropdown-content background">
+                            <a href="dashboard.html#studiewijzer">Studie wijzer</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
         <!-- Table -->
-        <div class="table-position">
-
+        <div class="box">
             <!-- Legenda -->
             <table>
                 <tr class="table-top">
@@ -65,7 +75,8 @@
                     <td>60</td>
                 </tr>
             </table>
-
+        </div>
+        <div class="box">
             <!-- Studiemonitor -->
             <table>
                 <tr class="table-top">
@@ -261,5 +272,7 @@
                 <img src = "./images/up.png" alt = "^" width="30px"> 
             </a>
         </h5>
+
+        <script src="./js/app.js"></script>
     </body>
 </html>
